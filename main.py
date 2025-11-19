@@ -1,6 +1,7 @@
+import os
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
-TOKEN = "8527276384:AAFXvihlZAgsGeSt03wErD6x2LMSGxyRaQc"
+TOKEN = os.getenv("BOT_TOKEN")
 
 def start(update, context):
     update.message.reply_text("¡Hola! El bot está funcionando con la versión 13.15.")
